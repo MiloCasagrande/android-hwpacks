@@ -5,4 +5,3 @@ extra_serial_options:
 android_specific_args:
  - init=/init
  - androidboot.console=ttySAC2
-

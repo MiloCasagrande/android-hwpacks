@@ -20,4 +20,3 @@ android_specific_args:
 mmc_option: '0:2'
 dtb_name: board.dtb
 dtb_addr = '0x8000000'
-

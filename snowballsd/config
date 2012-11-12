@@ -14,9 +14,8 @@ extra_boot_args_options:
  - vmalloc=500M
 extra_serial_options:
  - console=ttyAMA2,115200n8
-android_specific_args: 
+android_specific_args:
  - init=/init
  - androidboot.console=ttyAMA2
 dtb_name: board.dtb
 dtb_addr: '0x8000000'
-

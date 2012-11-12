@@ -15,4 +15,3 @@ extra_boot_args_options:
 android_specific_args:
  - init=/init
  - androidboot.console=ttyO2
-

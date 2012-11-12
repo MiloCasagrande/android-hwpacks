@@ -2,7 +2,6 @@ format: 3.0
 extra_serial_options:
  - console=tty0
  - console=ttyO2,115200n8
-android_specific_args: 
+android_specific_args:
  - init=/init
  - androidboot.console=ttyO2
-
