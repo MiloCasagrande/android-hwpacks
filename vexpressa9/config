@@ -1,0 +1,8 @@
+format: 3.0
+extra_serial_options:
+ - console=tty0
+ - console=ttyAMA0,38400n8
+android_specific_args:
+ - init=/init
+ - androidboot.console=ttyAMA0
+

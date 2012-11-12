@@ -1,0 +1,14 @@
+format: 3.0
+extra_boot_args_options:
+ - earlyprintk
+ - rootdelay=1
+ - fixrtc
+ - nocompcache
+ - di1_primary
+ - tve
+extra_serial_opts:
+ - console=%s,115200n8
+android_specific_args:
+ - init=/init
+ - androidboot.console=%s
+

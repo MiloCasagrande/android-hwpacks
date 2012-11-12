@@ -1,0 +1,8 @@
+format: 3.0
+extra_serial_options:
+ - console=tty0
+ - console=ttySAC1,115200n8
+android_specific_args:
+ - init=/init
+ - androidboot.console=ttySAC1
+
