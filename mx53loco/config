@@ -6,7 +6,7 @@ extra_boot_args_options:
  - nocompcache
  - di1_primary
  - tve
-extra_serial_opts:
+extra_serial_options:
  - console=%s,115200n8
 android_specific_args:
  - init=/init
