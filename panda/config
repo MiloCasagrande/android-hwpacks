@@ -2,7 +2,7 @@ format: 3.0
 bootloader_flavor: omap4_panda
 dtb_addr: '0x815f0000'
 dtb_name: board.dtb
-extra_serial_options:
+extra_serial_opts:
  - console=ttyO2,115200n8
 extra_boot_args_options:
  - earlyprintk
@@ -15,3 +15,11 @@ extra_boot_args_options:
 android_specific_args:
  - init=/init
  - androidboot.console=ttyO2
+serial_tty: ttyO2
+boot_script: boot.scr
+bootloader_flavor: omap4_panda
+initrd_addr: '0x81600000'
+kernel_addr: '0x80200000'
+load_addr: '0x80008000'
+live_serial_opts:
+ - serialtty=ttyO2
