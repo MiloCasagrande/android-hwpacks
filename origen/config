@@ -1,7 +1,17 @@
 format: 3.0
-extra_serial_options:
+extra_serial_opts:
  - console=tty0
  - console=ttySAC2,115200n8
 android_specific_args:
  - init=/init
  - androidboot.console=ttySAC2
+boot_script: boot.scr
+bootloader_flavor: origen
+initrd_addr: '0x42000000'
+kernel_addr: '0x40007000'
+kernel_flavors:
+ - origen
+load_addr: '0x40008000'
+mmc_option: '0:2'
+mmc_part_offset: 1
+serial_tty: ttySAC2
