@@ -3,6 +3,10 @@
 The repository contains all the Android hwpack necessary to use Linaro Image
 Tools while creating Android images.
 
+For the specification of an Android hardware pack, look:
+
+https://wiki.linaro.org/AndroidHardwarePacksV3
+
 = How to =
 
 A new command line argument has been introduced to 'linaro-android-media-create':
