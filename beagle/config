@@ -1,5 +1,5 @@
 format: 3.0
-extra_serial_opts:
+extra_serial_options:
  - console=tty0
  - console=ttyO2,115200n8
 android_specific_args:
@@ -22,3 +22,8 @@ serial_tty: ttyO2
 live_serial_options:
  - serialtty=ttyO2
 bootloader_file_in_boot_part: True
+kernel_flavors:
+ - linaro-omap4
+ - linaro-lt-omap
+ - linaro-omap
+ - omap4
