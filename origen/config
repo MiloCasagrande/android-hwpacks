@@ -1,5 +1,5 @@
 format: 3.0
-extra_serial_opts:
+extra_serial_options:
  - console=tty0
  - console=ttySAC2,115200n8
 android_specific_args:
