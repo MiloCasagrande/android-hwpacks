@@ -1,0 +1,20 @@
+format: 3.0
+extra_serial_options:
+ - console=tty0
+ - console=ttySAC2,115200n8
+android_specific_args:
+ - init=/init
+ - androidboot.console=ttySAC2
+boot_script: boot.scr
+bootloader_flavor: origen_quad
+initrd_addr: '0x42000000'
+kernel_addr: '0x40007000'
+kernel_flavors:
+ - origen_quad
+load_addr: '0x40008000'
+mmc_option: '0:2'
+mmc_part_offset: 1
+samsung_bl1_len: 48
+samsung_bl2_start: 49
+samsung_env_start: 1073
+serial_tty: ttySAC2
