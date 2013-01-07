@@ -2,7 +2,7 @@ format: 3.0
 bootloader_flavor: omap4_panda
 dtb_addr: '0x815f0000'
 dtb_name: board.dtb
-extra_serial_opts:
+extra_serial_options:
  - console=ttyO2,115200n8
 extra_boot_args_options:
  - earlyprintk
