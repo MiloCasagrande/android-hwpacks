@@ -19,3 +19,12 @@ android_specific_args:
  - androidboot.console=ttyAMA2
 dtb_name: board.dtb
 dtb_addr: '0x8000000'
+kernel_addr: '0x00100000'
+kernel_flavors:
+ - u8500
+ - ux500
+load_addr: '0x00008000'
+mmc_option: '1:1'
+serial_tty: ttyAMA2
+live_serial_opts:
+ - serialtty=ttyAMA2
