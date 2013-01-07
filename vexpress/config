@@ -5,3 +5,15 @@ extra_serial_options:
 android_specific_args:
  - init=/init
  - androidboot.console=ttyAMA0
+boot_script: boot.scr
+bootloader_file_in_boot_part: True
+bootloader_flavor: ca9x4_ct_vxp
+fat_size: 16
+initrd_addr: '0x62000000'
+kernel_addr: '0x60000000'
+kernel_flavors:
+ - linaro-vexpress
+load_addr: '0x60008000'
+serial_tty: ttyAMA0
+live_serial_options:
+ - serialtty=ttyAMA0
