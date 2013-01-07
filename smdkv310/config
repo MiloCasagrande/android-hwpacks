@@ -5,3 +5,13 @@ extra_serial_options:
 android_specific_args:
  - init=/init
  - androidboot.console=ttySAC1
+boot_script: boot.scr
+bootloader_flavor: smdkv310
+initrd_addr: '0x42000000'
+kernel_addr: '0x40007000'
+kernel_flavors:
+ - s5pv310
+load_addr: '0x40008000'
+mmc_option: '0:2'
+mmc_part_offset: 1
+serial_tty: ttySAC1
