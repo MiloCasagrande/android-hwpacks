@@ -7,13 +7,19 @@ extra_boot_args_options:
  - di1_primary
  - tve
 extra_serial_options:
- - console=%s,115200n8
+ - console=ttymxc0,115200n8
 android_specific_args:
  - init=/init
- - androidboot.console=%s
+ - androidboot.console=ttymxc0
 bootloader_flavor: mx6qsabrelite
 kernel_addr: '0x10000000'
 initrd_addr: '0x12000000'
 load_addr: '0x10008000'
 dtb_addr: '0x11ff0000'
 dtb_name: board.dtb
+boot_script: boot.scr
+mmc_option: '0:2'
+mmc_part_offset: 1
+serial_tty: ttymxc0
+live_serial_options:
+ - serialtty=ttymxc0
